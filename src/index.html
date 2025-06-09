@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rent. - Car Rental Service</title>
+		<link rel="icon" href="../assets/logo-rental-mobil.png" />
+		<link rel="stylesheet" href="./output.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header
+			id="head-menu"
+			class="h-27 border-b-2 transition-all duration-500 border-[#155DFC] p-8 flex flex-col gap-8 overflow-hidden"
+		>
+			<div class="flex items-center justify-between">
+				<a href="#">
+					<img
+						src="../assets/logo-rental-mobil.png"
+						alt="Logo Rental Mobil"
+						width="100"
+						height="100"
+					/>
+				</a>
+				<span
+					id="hamburger-btn"
+					class="material-symbols-outlined p-2 rounded-sm transition-all duration-150 cursor-pointer text-gray-700 text-4xl hover:bg-[#155DFC] hover:text-white active:bg-[#155DFC] active:text-white"
+					>menu</span
+				>
+			</div>
+
+			<nav>
+				<ul class="w-full flex flex-col gap-2 items-center font-medium text-[#737373]">
+					<a
+						href="#"
+						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
+					>
+						<li>Home</li>
+					</a>
+					<a
+						href="#"
+						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
+					>
+						<li>Booking</li>
+					</a>
+					<a
+						href="#"
+						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
+					>
+						<li>Promo</li>
+					</a>
+					<a
+						href="#"
+						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
+					>
+						<li>Help</li>
+					</a>
+				</ul>
+			</nav>
+
+			<div class="flex items-center justify-end space-x-2 cursor-default">
+				<div>
+					<p class="text-black font-medium text-sm">Your Location</p>
+					<p class="text-blue-800 font-semibold text-md">Indonesia</p>
+				</div>
+				<a href="https://maps.app.goo.gl/chvA1iXnFgErbRGL7">
+					<img
+						src="../assets/location-navbar.svg"
+						alt="Destination Icon"
+						width="70"
+						height="70"
+					/>
+				</a>
+			</div>
+		</header>
+
+		<main class="my-8">
+			<div class="relative">
+				<img
+					class="h-100"
+					src="../assets/bg-rental-mobil.png"
+					alt="Background Blue"
+					height="250"
+				/>
+				<h1 class="absolute top-[25%] text-white text-2xl text-center font-semibold">
+					Looking to save more on your rental car?
+				</h1>
+
+				<div
+					class="absolute top-[50%] flex w-full justify-center gap-4 text-white font-semibold"
+				>
+					<button class="w-35 border-2 px-6 py-2 rounded-2xl focus:outline-none">
+						Register
+					</button>
+					<button
+						class="w-35 bg-white text-[#155DFC] px-6 py-2 rounded-2xl focus:outline-none"
+					>
+						LogIn
+					</button>
+				</div>
+
+				<div class="w-full absolute top-[75%]">
+					<form
+						class="w-100% h-90 flex flex-col gap-4 mx-4 py-4 px-4 items-center bg-white shadow-2xl rounded-2xl"
+					>
+						<div class="w-full">
+							<label for="destination" class="font-semibold">Your Destination</label>
+							<div class="flex items-center border rounded-lg px-4 py-2 mt-1">
+								<img
+									src="../assets/location.svg"
+									alt="Destination"
+									class="!w-5 !h-5"
+								/>
+								<input
+									id="destination"
+									type="text"
+									placeholder="Add your location"
+									class="w-full pl-2 py-1 text-[12px] focus:outline-none active:outline-[#155DFC]"
+								/>
+							</div>
+						</div>
+						<div class="w-full">
+							<label for="start-rent" class="font-semibold">Start Rent</label>
+							<div class="flex items-center border rounded-lg px-4 py-2 mt-1">
+								<img src="../assets/date.svg" alt="Destination" class="!w-5 !h-5" />
+								<input
+									id="start-rent"
+									type="date"
+									class="w-full pl-2 py-1 text-[12px] focus:outline-none"
+								/>
+							</div>
+						</div>
+						<div class="w-full">
+							<label for="end-rent" class="font-semibold">End Rent</label>
+							<div class="flex items-center border rounded-lg px-4 py-2 mt-1">
+								<img src="../assets/date.svg" alt="Destination" class="!w-5 !h-5" />
+								<input
+									id="end-rent"
+									type="date"
+									class="w-full pl-2 py-1 text-[12px] focus:outline-none"
+								/>
+							</div>
+						</div>
+						<button class="w-full h-13 bg-[#00C950] rounded-2xl text-white mt-1">
+							Cari
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
