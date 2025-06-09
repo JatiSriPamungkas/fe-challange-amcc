@@ -1,0 +1,15 @@
+{
+  "name": "fe-pertemuan-4",
+  "version": "1.0.0",
+  "description": "Materi : Pengenalan Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "author": "Jati Sri Pamungkas",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}
