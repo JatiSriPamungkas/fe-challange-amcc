@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rent. - Car Rental Service</title>
-		<link rel="icon" href="../assets/logo-rental-mobil.png" />
+		<link rel="icon" href="../assets/logo-rental-mobil-icon.svg" />
 		<link rel="stylesheet" href="./output.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -28,7 +28,7 @@
 				</a>
 				<span
 					id="hamburger-btn"
-					class="material-symbols-outlined p-2 rounded-sm transition-all duration-150 cursor-pointer text-gray-700 text-4xl hover:bg-[#155DFC] hover:text-white active:bg-[#155DFC] active:text-white"
+					class="material-symbols-outlined p-2 rounded-lg transition-all duration-150 cursor-pointer text-gray-700 text-4xl hover:bg-[#155DFC] hover:text-white active:bg-[#155DFC] active:text-white"
 					>menu</span
 				>
 			</div>
@@ -81,12 +81,14 @@
 		<main class="my-8">
 			<div class="relative">
 				<img
-					class="h-100"
+					class="w-full h-100"
 					src="../assets/bg-rental-mobil.png"
 					alt="Background Blue"
 					height="250"
 				/>
-				<h1 class="absolute top-[25%] text-white text-2xl text-center font-semibold">
+				<h1
+					class="absolute top-[25%] min-[425px]:left-1/2 min-[425px]:-translate-x-1/2 text-white text-2xl text-center font-semibold"
+				>
 					Looking to save more on your rental car?
 				</h1>
 
@@ -103,6 +105,7 @@
 					</button>
 				</div>
 
+				<!-- RENT FORM -->
 				<div class="w-full absolute top-[75%]">
 					<form
 						class="w-100% h-90 flex flex-col gap-4 mx-4 py-4 px-4 items-center bg-white shadow-2xl rounded-2xl"
@@ -151,8 +154,103 @@
 					</form>
 				</div>
 			</div>
+
+			<!-- CATEGORY -->
+			<div class="mt-75 ml-4 flex flex-col gap-4">
+				<h1 class="font-bold text-xl">Our Category</h1>
+				<div class="flex justify-start md:justify-between gap-4 overflow-x-auto">
+					<button
+						class="w-30 h-10 flex items-center justify-center gap-2 rounded-full border border-[#2B7FFF] bg-[#2B7FFF] text-white"
+					>
+						<img src="../assets/cities.svg" class="w-4 h-4" />
+						<span class="text-[11px]">Cities</span>
+					</button>
+					<button
+						class="w-30 h-10 flex items-center justify-center gap-2 rounded-full border border-blue-500 text-black"
+					>
+						<img src="../assets/track.svg" class="w-4 h-4" />
+						<span class="text-[11px]">Track</span>
+					</button>
+					<button
+						class="w-30 h-10 flex items-center justify-center gap-2 rounded-full border border-blue-500 text-black"
+					>
+						<img src="../assets/mountain.svg" class="w-4 h-4" />
+						<span class="text-[11px]">Mountain</span>
+					</button>
+					<button
+						class="w-30 h-10 flex items-center justify-center gap-2 rounded-full border border-blue-500 text-black"
+					>
+						<img src="../assets/mountain.svg" class="w-4 h-4" />
+						<span class="text-[11px]">Mountain</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- POPULAR CAR -->
+			<div class="flex flex-col gap-4 bg-white md:px-16 mx-auto ml-4 mt-10">
+				<h1 class="font-bold text-xl">Start Your Adventures</h1>
+				<!-- card container -->
+				<div
+					class="flex justify-start md:justify-between gap-4 overflow-x-auto popular-card-container mt-4"
+				>
+					<!-- card -->
+				</div>
+			</div>
+
+			<!-- AVAILABLE CAR -->
+			<div class="p-4 bg-white mt-8">
+				<!-- Header Section -->
+				<div class="flex justify-between items-center mb-4">
+					<h1 class="font-bold text-xl">Available Now</h1>
+					<div class="flex gap-2 items-center">
+						<h1 class="font-medium text-lg">Filter</h1>
+						<button class="gap-2 p-2 bg-[#155DFC] rounded-lg shadow-md" id="filter-btn">
+							<img src="../assets/filter-white.png" alt="" class="w-4 h-4" />
+						</button>
+					</div>
+				</div>
+
+				<!-- Car Listings -->
+				<div class="mb-15 flex flex-col gap-4 available-card-container">
+					<!-- Car Card 1 -->
+				</div>
+			</div>
 		</main>
 
+		<footer class="bg-blue-600 rounded-t-3xl text-[#FDC700] py-6">
+			<div class="flex justify-center items-center space-x-8">
+				<a
+					href="#"
+					class="flex flex-col items-center justify-center gap-2 text-sm text-white hover:text-[#fff]"
+				>
+					<img src="../assets/browse.svg" alt="Browse" />
+					Browse
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center justify-center gap-2 text-sm hover:text-[#fff]"
+				>
+					<img src="../assets/booking.svg" alt="Booking" />
+					Booking
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center justify-center gap-2 text-sm hover:text-[#fff]"
+				>
+					<img src="../assets/promo.svg" alt="Promo" />
+					Promo
+				</a>
+				<a
+					href="#"
+					class="flex flex-col items-center justify-center gap-2 text-sm hover:text-[#fff]"
+				>
+					<img src="../assets/help.svg" alt="Help" />
+					Help
+				</a>
+			</div>
+		</footer>
+
+		<script src="./data.js"></script>
 		<script src="./script.js"></script>
 	</body>
 </html>
