@@ -13,72 +13,34 @@
 	</head>
 
 	<body>
-		<header
-			id="head-menu"
-			class="h-27 border-b-2 transition-all duration-500 border-[#155DFC] p-8 flex flex-col gap-8 overflow-hidden"
-		>
-			<div class="flex items-center justify-between">
+		<header id="head-menu" class="p-8">
+			<div class="flex items-center justify-between space-x-2 cursor-default">
 				<a href="#">
 					<img
 						src="../assets/logo-rental-mobil.png"
 						alt="Logo Rental Mobil"
-						width="100"
-						height="100"
+						width="75"
+						height="75"
 					/>
 				</a>
-				<span
-					id="hamburger-btn"
-					class="material-symbols-outlined p-2 rounded-lg transition-all duration-150 cursor-pointer text-gray-700 text-4xl hover:bg-[#155DFC] hover:text-white active:bg-[#155DFC] active:text-white"
-					>menu</span
-				>
-			</div>
-
-			<nav>
-				<ul class="w-full flex flex-col gap-2 items-center font-medium text-[#737373]">
-					<a
-						href="#"
-						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
-					>
-						<li>Home</li>
+				<div class="flex items-center gap-2">
+					<div class="text-sm">
+						<p class="text-black font-medium text-[12px] text-end">Your Location</p>
+						<p class="text-blue-800 font-semibold text-[12px] text-end">Indonesia</p>
+					</div>
+					<a href="https://maps.app.goo.gl/chvA1iXnFgErbRGL7">
+						<img
+							src="../assets/location-navbar.svg"
+							alt="Destination Icon"
+							width="40"
+							height="40"
+						/>
 					</a>
-					<a
-						href="#"
-						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
-					>
-						<li>Booking</li>
-					</a>
-					<a
-						href="#"
-						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
-					>
-						<li>Promo</li>
-					</a>
-					<a
-						href="#"
-						class="w-full flex justify-center transition-all duration-150 hover:text-black active:bg-[#155DFC] active:text-white py-2 rounded-md"
-					>
-						<li>Help</li>
-					</a>
-				</ul>
-			</nav>
-
-			<div class="flex items-center justify-end space-x-2 cursor-default">
-				<div>
-					<p class="text-black font-medium text-sm">Your Location</p>
-					<p class="text-blue-800 font-semibold text-md">Indonesia</p>
 				</div>
-				<a href="https://maps.app.goo.gl/chvA1iXnFgErbRGL7">
-					<img
-						src="../assets/location-navbar.svg"
-						alt="Destination Icon"
-						width="70"
-						height="70"
-					/>
-				</a>
 			</div>
 		</header>
 
-		<main class="my-8">
+		<main>
 			<div class="relative">
 				<img
 					class="w-full h-100"
@@ -177,12 +139,6 @@
 						<img src="../assets/mountain.svg" class="w-4 h-4" />
 						<span class="text-[11px]">Mountain</span>
 					</button>
-					<button
-						class="w-30 h-10 flex items-center justify-center gap-2 rounded-full border border-blue-500 text-black"
-					>
-						<img src="../assets/mountain.svg" class="w-4 h-4" />
-						<span class="text-[11px]">Mountain</span>
-					</button>
 				</div>
 			</div>
 
@@ -204,20 +160,23 @@
 					<h1 class="font-bold text-xl">Available Now</h1>
 					<div class="flex gap-2 items-center">
 						<h1 class="font-medium text-lg">Filter</h1>
-						<button class="gap-2 p-2 bg-[#155DFC] rounded-lg shadow-md" id="filter-btn">
-							<img src="../assets/filter-white.png" alt="" class="w-4 h-4" />
+						<button
+							class="gap-2 p-2 bg-[#155DFC] rounded-lg shadow-md focus:outline-none"
+							id="filter-btn"
+						>
+							<img src="../assets/filter-white.png" alt="filter" class="w-4 h-4" />
 						</button>
 					</div>
 				</div>
 
 				<!-- Car Listings -->
-				<div class="mb-15 flex flex-col gap-4 available-card-container">
+				<div class="mb-40 flex flex-col gap-4 available-card-container">
 					<!-- Car Card 1 -->
 				</div>
 			</div>
 		</main>
 
-		<footer class="bg-blue-600 rounded-t-3xl text-[#FDC700] py-6">
+		<footer class="w-full bg-blue-600 rounded-t-3xl text-[#FDC700] py-6 fixed left-0 bottom-0">
 			<div class="flex justify-center items-center space-x-8">
 				<a
 					href="#"
