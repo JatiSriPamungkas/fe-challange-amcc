@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			return `
         <div class="shadow-xl cursor-pointer">
             <div class="relative">
-                <img src="${car.image}" alt="${car.name}" class="w-full " />
+                <img src="${car.image}" alt="${car.name}" class="w-full" />
                 <p class="absolute top-2 left-2 bg-yellow-400 text-black text-sm md:font-medium px-5 md:px-8 py-1 rounded-full z-0">Popular
                 </p>
             </div>
